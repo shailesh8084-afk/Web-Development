@@ -15,6 +15,6 @@ btn.addEventListener('click', ()=> {
                 </div>
             </div>`;
             inp.value = "";
-    
+           
     
 })
