@@ -1,28 +1,12 @@
-const btn= document.querySelector('button');
-const div= document.querySelector('div');
-const main= document.querySelector('main');
-const body = document.body;
+const form = document.querySelector('form')
+const inp1= document.querySelector('#name');
+const inp2= document.querySelector('#email');
 
-btn.addEventListener('click', function (){
-    console.log('button triggered');
-},
-true
-);
 
-div.addEventListener('click', function (){
-    console.log('div triggered');
-},
-true
-);
-
-main.addEventListener('click', function (){
-    console.log('main triggered');
-},
-true
-);
-
-body.addEventListener('click', function (){
-    console.log('body triggered');
-},
-true
-);
+form.addEventListener('submit', (events) => {
+    // events.preventDefault() ye form ko reload hone se rukta h 
+    let name = inp1.value;
+    let email = inp2.value;
+    console.log(name,email);
+    // form.reset(); isse form reset hota h taki dubara kuchh likh sake 
+})
