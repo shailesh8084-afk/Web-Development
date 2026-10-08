@@ -1,20 +1,28 @@
-const inp = document.querySelector('input')
-const btn = document.querySelector('button')
-const todoBox = document.querySelector('.todo-list')
+const btn= document.querySelector('button');
+const div= document.querySelector('div');
+const main= document.querySelector('main');
+const body = document.body;
 
-btn.addEventListener('click', ()=> {
-    const value = inp.value
+btn.addEventListener('click', function (){
+    console.log('button triggered');
+},
+true
+);
 
-    if(value.trim()==="") return;
+div.addEventListener('click', function (){
+    console.log('div triggered');
+},
+true
+);
 
-    todoBox.innerHTML += `<div class="li">
-                <h3>${value}</h3>
-                <div>
-                    <button class="btn edit">Edit</button>
-                    <button class="btn del">Delete</button>
-                </div>
-            </div>`;
-            inp.value = "";
-           
-    
-})
+main.addEventListener('click', function (){
+    console.log('main triggered');
+},
+true
+);
+
+body.addEventListener('click', function (){
+    console.log('body triggered');
+},
+true
+);
