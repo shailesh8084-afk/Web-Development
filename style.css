@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica neue';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    gap: 10px;
+}
+
+form{
+    height: 30%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: darkslategrey;
+    padding: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    gap: 10px;
+}
+
+input{
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+button{
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: darkgreen;
+}
+
+.users{
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+}
+
+.users_card{
+    height: 30%;
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.image_box{
+    height: 70%;
+    width: 100%;
+}
+
+.image_box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+h3{
+    margin-top: 10px;
+}
